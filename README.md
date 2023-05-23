@@ -1,49 +1,23 @@
-# next js coure
+# next js project
 
-***Client-Side Navigation:***
+# client side or server side.
 
-The Link component enables client-side navigation between two pages in the same Next.js app.
+by default next js server side use krta he or agr ap ne client side use krna he toh ap ko page k top pr "use client"; likhna ho gah . or lekin agar ap react k hooks use kr rahe he toh wo sirf client side pr render hote he toh ap ko "use client"; lazmi likhna ho gah.
 
-Client-side navigation means that the page transition happens using JavaScript, which is faster than the default navigation done by the browser.
+# when we use server vs client component 
 
-***Code splitting and prefetching***
+By default, Next.js uses server-side rendering. If you want to use client-side rendering, you need to add "use client" at the top of the page. However, if you are using React hooks, they are rendered only on the client-side, so you must include "use client" as well.
 
-Next.js does code splitting automatically, so each page only loads what’s necessary for that page. That means when the homepage is rendered, the code for other pages is not served initially.
+In Next.js, the decision to use server-side rendering (SSR) or client-side rendering (CSR) depends on your specific use case and requirements. Here are some factors to consider when deciding whether to use server-side rendering or client-side rendering for a component:
 
-This ensures that the homepage loads quickly even if you have hundreds of pages.
+***Server-Side Rendering (SSR):**
 
-**Summary**
+1: Initial Page Load
+2: Dynamic Content
+3: Authentication and Authorization
 
-Next.js automatically optimizes your application for the best performance by code splitting, client-side navigation, and prefetching (in production).
+***Client-Side Rendering (CSR):**
 
-You create routes as files under pages and use the built-in Link component. No routing libraries are required.
-
-You can learn more about the Link component in the API reference for next/link and routing in general in the routing documentation.
-
-Note: If you need to link to an external page outside the Next.js app, just use an "<a>" tag without Link.
-
-# Assets, Metadata, and CSS
-
-assets, metadata, and CSS are essential elements in web development that contribute to the overall user experience and presentation of your application. Here's a brief summary of each:
-
-***Assets***
-
-Assets are external files, such as images or fonts, used in your web application. In Next.js, you can place assets in the "public" directory and reference them using relative URLs.
-
-***Metadata:***
-
-Metadata provides information about your web application, including the title, description, and author. Next.js allows you to customize the metadata for each page using the next/head package and the Head component, which enables you to set specific metadata tags in your page files.
-
-***CSS:***
-
- CSS is used to define styles and layout for your web application. Next.js offers various options for handling CSS, including CSS modules, global stylesheets, and CSS-in-JS libraries like styled-components or Emotion. CSS modules allow local scoping of styles, global stylesheets affect all pages, and CSS-in-JS libraries provide dynamic styling within JavaScript files.
-
-Next.js provides comprehensive documentation on working with assets, metadata, and CSS. By referring to the official Next.js documentation, you can find more detailed information, guidelines, and examples tailored to your specific requirements.
-
-These elements play significant roles in creating visually appealing and performant web applications. By effectively utilizing assets, metadata, and CSS, you can enhance the user experience and presentation of your Next.js projects.
-
-
-
-
-
-
+1:Interactive and Dynamic Updates
+2: Client-Side Data Fetching
+3: Code Splitting and Performance
