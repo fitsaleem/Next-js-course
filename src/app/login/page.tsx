@@ -11,7 +11,7 @@ const LoginPage = () => {
     password: "",
   });
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e:any) => {
     e.preventDefault();
     // Handle form submission logic here
   };
