@@ -33,9 +33,9 @@ const SignupPage = () => {
     try {
 
       setLoading(true);
-      const response = await axios.post("./api/users/signup", user);
+      const response = await axios.post("/api/users/signup", user);
       console.log("Signup success", response.data);
-      router.push("./login");
+      
       
     } catch (error: any) {
       console.log("signup fail", error.message);
@@ -43,6 +43,7 @@ const SignupPage = () => {
     }
     finally{
       setLoading(false)
+      router.push("./login");
     }
     
   };
@@ -64,7 +65,7 @@ const SignupPage = () => {
           placeholder="Enter your email"
           onChange={(e) => setUser({ ...user, email: e.target.value })}
           className="w-full mb-4 p-2 border border-gray-300 rounded text-black"
-          required
+          
         />
 
         <label htmlFor="username" className="mb-2">
@@ -78,7 +79,7 @@ const SignupPage = () => {
           placeholder="Enter your username"
           onChange={(e) => setUser({ ...user, username: e.target.value })}
           className="w-full mb-4 p-2 border border-gray-300 rounded text-black"
-          required
+          
         />
 
         <label htmlFor="password" className="mb-2">
@@ -92,7 +93,7 @@ const SignupPage = () => {
           placeholder="Enter your password"
           onChange={(e) => setUser({ ...user, password: e.target.value })}
           className="w-full mb-4 p-2 border border-gray-300 rounded text-black"
-          required
+          
         />
 
         <button
