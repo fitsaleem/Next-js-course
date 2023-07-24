@@ -1,4 +1,4 @@
-# next js project
+# next js project.
 
 # client side or server side.
 
@@ -95,4 +95,4 @@ You can create a server.js file in your project's root directory and define your
 Next.js supports dynamic routing where you can define route parameters and handle them in your page or component.
 Dynamic routes use the pages/[slug].js file naming convention, where [slug] represents a parameter in the URL.
 
-For more details on API Routes, Custom Servers, and Dynamic Routing in Next.js, you can refer to the official documentation: (API Routes)[https://nextjs.org/docs/pages/building-your-application/routing/api-routes], (Custom Server)[https://nextjs.org/docs/pages/building-your-application/configuring/custom-server], (Dynamic Routes)[https://nextjs.org/docs/pages/building-your-application/routing/dynamic-routes].
+For more details on API Routes, Custom Servers, and Dynamic Routing in Next.js, you can refer to the official documentation: (API Routes)[https://nextjs.org/docs/pages/building-your-application/routing/api-routes], (Custom Server)[https://nextjs.org/docs/pages/building-your-application/configuring/custom-server], (Dynamic Routes)[https://nextjs.org/docs/pages/building-your-application/routing/dynamic-routes].l
