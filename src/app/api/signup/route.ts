@@ -22,6 +22,14 @@ export async function POST(request: NextRequest){
             return NextResponse.json({error: "User already exists"}, {status: 400})
         }
 
+        // check if username is not unique
+
+        const uniqueUser=await User.findOne({username})
+
+        if(uniqueUser){
+            return NextResponse.json({error:  "username is already take"},{status: 400});
+        }
+
         //hash password
         const salt = await bcryptjs.genSalt(10)
         const hashedPassword = await bcryptjs.hash(password, salt)
