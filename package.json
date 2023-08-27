@@ -32,6 +32,7 @@
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
     "@types/jsonwebtoken": "^9.0.2",
-    "@types/nodemailer": "^6.4.9"
+    "@types/nodemailer": "^6.4.9",
+    "prisma": "^5.2.0"
   }
 }
