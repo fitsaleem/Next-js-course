@@ -48,18 +48,18 @@ export async function POST(request: NextRequest){
         await sendEmail({email, emailType:"VERIFY",userId: savedUser._id});
         //end verification email code
 
-        const headers = request.headers;
-        const newResponse =  NextResponse.json(savedUser, {headers});
+        // const headers = request.headers;
+        // const newResponse =  NextResponse.json(savedUser, {headers});
 
-        return newResponse;
+        // return newResponse;
 
-        // return NextResponse.json(
-        //     {
-        //         message: "User Created Successfully",
-        //         success: true,
-        //         savedUser,     
-        //     }
-        // )
+        return NextResponse.json(
+            {
+                message: "User Created Successfully",
+                success: true,
+                savedUser,     
+            }
+        )
 
 
     } catch (error: any) {
